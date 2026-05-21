@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Arya</title>
+
+  <!-- ICON -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+      scroll-behavior:smooth;
+    }
+
+    body{
+      background:#f5f5f5;
+      color:#033b2f;
+    }
+
+    /* NAVBAR */
+    nav{
+      width:100%;
+      background:white;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 30px;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:bold;
+      color:#0b7a5a;
+    }
+
+    .logo i{
+      margin-right:10px;
+    }
+
+    .menu{
+      font-size:35px;
+      color:#0b7a5a;
+    }
+
+    /* HERO */
+    .hero{
+      min-height:100vh;
+      background:#8a9189;
+      display:flex;
+      align-items:center;
+      padding:50px;
+    }
+
+    .hero-text h1{
+      font-size:80px;
+      color:white;
+      line-height:1;
+      margin-bottom:30px;
+    }
+
+    .hero-text p{
+      font-size:25px;
+      color:white;
+      margin-bottom:40px;
+    }
+
+    .btn{
+      display:inline-block;
+      background:white;
+      color:#0b7a5a;
+      padding:20px 40px;
+      border-radius:15px;
+      text-decoration:none;
+      font-size:25px;
+      font-weight:bold;
+    }
+
+    /* ABOUT */
+    .about{
+      padding:60px 40px;
+      background:white;
+    }
+
+    .about img{
+      width:100%;
+      border-radius:30px;
+      margin-bottom:40px;
+    }
+
+    .about h2{
+      font-size:70px;
+      margin-bottom:25px;
+    }
+
+    .about p{
+      font-size:28px;
+      line-height:1.7;
+      color:#0b7a5a;
+    }
+
+    .info{
+      margin-top:30px;
+      font-size:28px;
+    }
+
+    .info b{
+      color:#022f25;
+    }
+
+    /* GALERI */
+    .gallery{
+      padding:60px 30px;
+      background:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+    }
+
+    .gallery h2{
+      text-align:center;
+      font-size:70px;
+      color:white;
+      margin-bottom:50px;
+    }
+
+    .card{
+      background:rgba(255,255,255,0.15);
+      padding:25px;
+      border-radius:30px;
+      margin-bottom:40px;
+      backdrop-filter:blur(8px);
+    }
+
+    .card img{
+      width:100%;
+      border-radius:25px;
+    }
+
+    .card h3{
+      text-align:center;
+      color:white;
+      font-size:45px;
+      margin-top:20px;
+    }
+
+    /* FOOTER */
+    footer{
+      background:#0b7a5a;
+      color:white;
+      text-align:center;
+      padding:25px;
+      font-size:22px;
+    }
+
+    /* RESPONSIVE */
+    @media(max-width:768px){
+
+      .hero{
+        padding:40px;
+      }
+
+      .hero-text h1{
+        font-size:65px;
+      }
+
+      .hero-text p{
+        font-size:20px;
+      }
+
+      .btn{
+        font-size:22px;
+      }
+
+      .about h2,
+      .gallery h2{
+        font-size:55px;
+      }
+
+      .about p,
+      .info{
+        font-size:24px;
+      }
+
+      .card h3{
+        font-size:35px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">
+      <i class="fa-solid fa-leaf"></i> Muhammad Arya Pratama
+    </div>
+
+    <div class="menu">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>
+        Selamat <br>
+        Datang di <br>
+        Portofolio <br>
+        Saya
+      </h1>
+
+      <p>
+        Halo, saya Muhammad Arya Pratam<br>
+        Siswa • Desainer • Pecinta Alam
+      </p>
+
+      <a href="#about" class="btn">Lihat Eksplorasi</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+
+    <img src="image/pratama.jpg" alt="Foto Saya">
+
+    <h2>Tentang Saya</h2>
+
+    <p>
+      Saya Muhammad Arya Pratama, siswa SMKN 13 Bandung
+      dengan minat di bidang jaringan komputer.
+    </p>
+
+    <div class="info">
+      <p><b>Cita-cita:</b> Teknisi Jaringan</p>
+      <p><b>Lokasi:</b> Bandung</p>
+    </div>
+
+  </section>
+
+  <!-- GALERI -->
+  <section class="gallery">
+
+    <h2>Eksplorasi Saya</h2>
+
+    <div class="card">
+      <img src="image/wel.jpg" alt="">
+      <h3>Tahura</h3>
+    </div>
+
+    <div class="card">
+      <img src="image/mantap.jpg" alt="">
+      <h3>ITB</h3>
+    </div>
+
+    <div class="card">
+      <img src="image/Arya.jpg" alt="">
+      <h3>Vila lembang</h3>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Arya Pratama | Portofolio
+  </footer>
+
+</body>
+</html>
